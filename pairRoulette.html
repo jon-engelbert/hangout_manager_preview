@@ -27,47 +27,45 @@
     <table>
         <tr>
             <th>Available User</th>
-            <th>Project Description</th>
+            <th>Project Description.  .   .  .  .  .</th>
             <th>Wait time</th>
-            <th>Action</th>
-            <th>More Info</th>
+            <th>Available until</th>
+            <th>Actions</th>
         </tr>
         <tr>
-            <td>Jon E</td>
-            <td>project 1</td>
-            <td>0:30</td>
+            <td>Tansaku</td>
+            <td>169.1 HW1- Free help for novices</td>
+            <td>1:30</td>
+            <td>10:30</td>
             <td>
                 <SELECT NAME="action">
-                    <OPTION VALUE="">Action...
-                    <OPTION VALUE="/"                     >Initiate Meetup...
+                    <OPTION VALUE="/"                     >Initiate Hangout...
                     <OPTION VALUE="/"                          >Contact...
-                    <OPTION VALUE="/"                          >More info...
+                    <OPTION VALUE="/"                          >About this user...
                 </SELECT>
             </td>
-            <td><a href="">More Info...</a></td>
         </tr>
         <tr>
             <td>Marian</td>
-            <td>project 2</td>
-            <td>1:00</td>
+            <td>Codealia- TDD for ruby lambda/closures</td>
+            <td>0:30</td>
+            <td>11:00</td>
             <td>
                 <SELECT NAME="action">
-                    <OPTION VALUE="">Action...
-                    <OPTION VALUE="/"                     >Initiate Meetup...
+                    <OPTION VALUE="/"                     >Initiate Hangout...
                     <OPTION VALUE="/"                          >Contact...
-                    <OPTION VALUE="/"                          >More info...
+                    <OPTION VALUE="/"                          >About this user...
                 </SELECT>
             </td>
-            <td><a href="">More Info...</a></td>
         </tr>
         <tr>
-            <td>someone</td>
+            <td>Jon E (me)</td>
             <td>project 3</td>
-            <td>1:10</td>
+            <td>0:10</td>
+            <td>12:30</td>
             <td>
-                <a href="Create_event_with_partner.html">Create new hangout</a>
+                <a href="Create_event_with_partner.html">Remove me from queue</a>
             </td>
-            <td><a href="">More Info...</a></td>
         </tr>
     </table>
     <h2> Active Sessions</h2>
@@ -102,5 +100,11 @@
         > anyone: sure
         > ...
     </textarea>
+    <br>
+    When a user adds himself to the queue, then a new row is added to the table, 
+    and the fields for project description and Available Until will be clearly waiting for data. 
+    So the user can set the project description and Available Until fields, similar to adding a new comment into slack or Disqus.  
+    
+    When Initiating a new Hangout, perhaps there can be a checkbox for the pair to mark the session as open or closed.
 </body>
 </html>
