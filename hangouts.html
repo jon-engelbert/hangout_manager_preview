@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<table>
+    <tr>
+        <td><a href="scrums_with_hookups.html">Scrums With Hookups</td>
+        <td><a href="hangouts.html">Hangouts</td>
+    </tr>
+</table>
+    <h1>Hangout Manager</h1>
+    <table>
+        <tr>
+            <td><a href="hangouts_create_new.html">Create new Active hangout</a></td>
+            <td><a href="hangouts_create_pending.html">Create new Pending hangout and wait for partners</a></td>
+        </tr>
+    </table>
+    <br>
+    Choose an active hangout from the list below and join it, or choose a pending hangout from the 2nd list and activate and join it. 
+    <br>
+    <h2>Active Hangouts</h2>
+    <table>
+        <tr>
+        <th>Title</th>
+        <th>Start Time</th>
+        <th>Participants</th>
+        <th>Open/Closed</th>
+        <th>Actions</th>
+        </tr>
+        <tr>
+        <td>WebsiteOne: Event Test Development, pair program</td>
+        <td>8:05</td>
+        <td>April,Bobby, Jon E.</td>
+        <td>Open</td>
+        <td><a href="http://">Join Hangout...</a></td>
+        <td><a href="http://">Restart Hangout...</a></td>
+        </tr>
+        <tr>
+        <td>codelailu</td>
+        <td>8:25</td>
+        <td>Paul, ...</td>
+        <td>Open</td>
+        <td><a href="http://">Join Hangout...</a></td>
+        </tr>
+    </table>
+    <br>
+    <br>
+    <h2>Pending Hangouts</h2>
+    <table>
+        <tr>
+            <th>Available User</th>
+            <th>Project Description.  .   .  .  .  .</th>
+            <th>Wait time</th>
+            <th>Available until</th>
+            <th>Actions</th>
+        </tr>
+        <tr>
+            <td>Tansaku</td>
+            <td>169.1 HW1- Free help for novices</td>
+            <td>1:30</td>
+            <td>10:30</td>
+            <td>
+                <SELECT NAME="action">
+                    <OPTION VALUE="/"                     >Initiate Hangout...
+                    <OPTION VALUE="/"                          >Contact...
+                    <OPTION VALUE="/"                          >About this user...
+                </SELECT>
+            </td>
+        </tr>
+        <tr>
+            <td>Marian</td>
+            <td>Codealia- TDD for ruby lambda/closures</td>
+            <td>0:30</td>
+            <td>11:00</td>
+            <td>
+                <SELECT NAME="action">
+                    <OPTION VALUE="/"                     >Initiate Hangout...
+                    <OPTION VALUE="/"                          >Contact...
+                    <OPTION VALUE="/"                          >About this user...
+                </SELECT>
+            </td>
+        </tr>
+    </table>
+    <h2>Chat</h2>
+    <textarea rows="4" cols="50">
+        > Jon: Anyone wanna pair?
+        > anyone: sure
+        > ...
+    </textarea>
+    <br>
+    When a user adds himself to the queue, then a new row is added to the table, 
+    and the fields for project description and Available Until will be clearly waiting for data. 
+    So the user can set the project description and Available Until fields, similar to adding a new comment into slack or Disqus.  
+    
+    When Initiating a new Hangout, perhaps there can be a checkbox for the pair to mark the session as open or closed.
+    When the user hovers over 'his' hangout, show the 'Restart Hangout" link, as well as the 'edit' button to the right.
+</body>
+</html>

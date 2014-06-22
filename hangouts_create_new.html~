@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<table>
+    <tr>
+        <td><a href="scrums_with_hookups.html">Scrums With Hookups</td>
+        <td><a href="hangouts.html">Hangouts</td>
+    </tr>
+</table>
+    <h1>Hangout Manager</h1>
+    Add yourself to the queue, Create a new hangout by choosing a pair partner from the list below, or Create a new hangout by specifying a partner who is not in the list. 
+    <br><br>
+    <table>
+        <tr>
+            <td><a href="Hangouts_duringAdd.html">I'm available (Add me to the Queue)</a></td>
+             <td><a href="">Remove me from Queue</a></td>
+        </tr>
+    </table>
+    <br>
+    <h2> Queue</h2>
+    <table>
+        <tr>
+            <th>Available User</th>
+            <th>Project Description.  .   .  .  .  .</th>
+            <th>Wait time</th>
+            <th>Available until</th>
+            <th>Actions</th>
+        </tr>
+        <tr>
+            <td>Tansaku</td>
+            <td>169.1 HW1- Free help for novices</td>
+            <td>1:30</td>
+            <td>10:30</td>
+            <td>
+                <SELECT NAME="action">
+                    <OPTION VALUE="/"                     >Initiate Hangout...
+                    <OPTION VALUE="/"                          >Contact...
+                    <OPTION VALUE="/"                          >About this user...
+                </SELECT>
+            </td>
+        </tr>
+        <tr>
+            <td>Marian</td>
+            <td>Codealia- TDD for ruby lambda/closures</td>
+            <td>0:30</td>
+            <td>11:00</td>
+            <td>
+                <SELECT NAME="action">
+                    <OPTION VALUE="/"                     >Initiate Hangout...
+                    <OPTION VALUE="/"                          >Contact...
+                    <OPTION VALUE="/"                          >About this user...
+                </SELECT>
+            </td>
+        </tr>
+    </table>
+    <br>
+    <br>
+    <a href="hangouts_create_new.html">Create new hangout and notify partner (not using the queue)</a>
+    <h2> Active Hangouts</h2>
+    <table>
+        <tr>
+            <th>Participants</th>
+            <th>Projects</th>
+            <th>Wait time</th>
+            <th>Status</th>
+            <th>Action</th>
+        </tr>
+        <tr>
+            <td>adam, brian</td>
+            <td>project 1</td>
+            <td>1:00</td>
+            <td>open</td>
+            <td>
+                <a href="">Join Hangout...</a>
+            </td>
+            <td>
+                <a href="">Restart Hangout...</a>
+            </td>
+        </tr>
+        <tr>
+            <td>carol, dave</td>
+            <td>project 2</td>
+            <td>2:00</td>
+            <td>closed</td>
+            <td>-</td>
+        </tr>
+    </table>
+    <h2>Chat</h2>
+    <textarea rows="4" cols="50">
+        > Jon: Anyone wanna pair?
+        > anyone: sure
+        > ...
+    </textarea>
+    <br>
+    When a user adds himself to the queue, then a new row is added to the table, 
+    and the fields for project description and Available Until will be clearly waiting for data. 
+    So the user can set the project description and Available Until fields, similar to adding a new comment into slack or Disqus.  
+    
+    When Initiating a new Hangout, perhaps there can be a checkbox for the pair to mark the session as open or closed.
+    When the user hovers over 'his' hangout, show the 'Restart Hangout" link, as well as the 'edit' button to the right.
+</body>
+</html>
