@@ -14,8 +14,7 @@
     <h1>Hangout Manager</h1>
     <table>
         <tr>
-            <td><a href="hangouts_create_new.html">Create new Active hangout</a></td>
-            <td><a href="hangouts_create_pending.html">Create new Pending hangout and wait for partners</a></td>
+            <td><a href="hangouts_create_pending.html">Create new hangout event (with or without partners)</a></td>
         </tr>
     </table>
     <br>
@@ -27,21 +26,18 @@
         <th>Title</th>
         <th>Start Time</th>
         <th>Participants</th>
-        <th>Open/Closed</th>
         <th>Actions</th>
         </tr>
         <tr>
         <td>WebsiteOne: Event Test Development, pair program</td>
         <td>8:05</td>
         <td>April,Bobby, Jon E.</td>
-        <td>Open</td>
         <td><a href="http://">Manage Hangout...</a></td>
         </tr>
         <tr>
         <td>codelailu</td>
         <td>8:25</td>
         <td>Paul, ...</td>
-        <td>Open</td>
         <td><a href="http://">Join Hangout...</a></td>
         </tr>
     </table>
@@ -50,49 +46,91 @@
     <h2>Pending Hangouts</h2>
     <table>
         <tr>
-            <th>Available User</th>
-            <th>Project Description.  .   .  .  .  .</th>
-            <th>Wait time</th>
-            <th>Available until</th>
+            <th>Title</th>
+            <th>Start Time Range</th>
+            <th>Participants</th>
             <th>Actions</th>
         </tr>
         <tr>
-            <td>Tansaku</td>
             <td>169.1 HW1- Free help for novices</td>
-            <td>1:30</td>
-            <td>10:30</td>
-            <td>
-                <SELECT NAME="action">
-                    <OPTION VALUE="/">Initiate Hangout...
-                    <OPTION VALUE="/">About this user...
-                </SELECT>
-            </td>
+            <td>1:30-2:30</td>
+            <td>Tansaku, Michelle</td>
+            <td><a href="http://">Offer Partnership...</a></td>
+            <td><a href="http://">Start Hangout...</a>
         </tr>
         <tr>
-            <td>Marian</td>
             <td>Codealia- TDD for ruby lambda/closures</td>
-            <td>0:30</td>
-            <td>11:00</td>
-            <td>
-                <SELECT NAME="action">
-                    <OPTION VALUE="/">Initiate Hangout...
-                    <OPTION VALUE="/">About this user...
-                </SELECT>
-            </td>
+            <td>3:30-4:00</td>
+            <td>Marian</td>
+            <td><a href="http://">Offer Partnership...</a></td>
         </tr>
     </table>
-    <h2>Chat</h2>
-    <textarea rows="4" cols="50">
-        > Jon: Anyone wanna pair?
-        > anyone: sure
-        > ...
-    </textarea>
-    <br>
-    When a user adds himself to the queue, then a new row is added to the table, 
-    and the fields for project description and Available Until will be clearly waiting for data. 
-    So the user can set the project description and Available Until fields, similar to adding a new comment into slack or Disqus.  
-    
-    When Initiating a new Hangout, perhaps there can be a checkbox for the pair to mark the session as open or closed.
-    When the user hovers over 'his' hangout, show the 'Restart Hangout" link, as well as the 'edit' button to the right.
 </body>
 </html>
+<br>
+MVP
+<br>
+<br>
+As a participant in an active hangout , <br>
+In order to  manage (e.g. restart, reset the link, etc) the hangout,<br>
+I'd like a link from the active hangouts table.<br>
+<br>
+As a user,<br>
+In order to join an existing hangout,<br>
+I'd like a link from the active hangouts table.<br>
+<br>
+As a user, <br>
+In order to partner with the originator of a pending hangout,<br>
+I'd like a link to Offer Partnership for a pending hangout in the Pending hangouts table<br>
+<br>
+As a user (pending event participant), <br>
+In order to remove my offer to partner with the originator of a pending hangout,<br>
+I'd like a link to Remove my offer for Partnership for a pending hangout in the Pending hangouts table<br>
+<br>
+As a user (event initiator),<br>
+In order to add a new pending hangout and to find partners(i.e. I'm planning to start it later),<br>
+I'd like to create a new pending hangout with no partners<br>
+<br>
+As a user (event initiator),<br>
+In order to add a new pending hangout with known partners(i.e. I'm planning to start it later, but I have partners already),<br>
+I'd like to create a new pending hangout and specify my partner(s)<br>
+<br>
+As an event creator, <br>
+In order to edit an event that I created,<br>
+I'd like an edit option from the hangouts tables (or possibly this is part of Managing the event)<br>
+<br>
+As an event creator,<br>
+In order to delete an event that I created,<br>
+I'd like a delete option next to events I created. <br>
+<br>
+<br>
+** NOT MVP **
+<br>
+As a user,<br>
+In order to discuss the pending hangout with the originator,<br>
+I'd like to send a message to the originator<br>
+<br>
+As a user,<br>
+In order to get more information about the  originator,<br>
+I'd like to view the originator's profile<br>
+<br>
+As a user, <br>
+In order to discuss events/hangouts with others,<br>
+I'd like to chat with them about the hangouts<br>
+<br>
+As a hangout creator/participant, <br>
+In order to close off an event to others,<br>
+I'd like to mark the event as closed (and remove the link for others to join)<br>
+<br>
+As a hangout creator/participant, <br>
+In order to limit the number of participants,<br>
+I'd like to set a limit on the number of participants (which is enforced)<br>
+
+
+    <br>
+    When a user adds himself to the queue, then a new row is added to the table, 
+    and the fields for project description and Available Until will be editable. 
+    So the user can set the project description and Time Range fields, similar to adding a new comment into slack or Disqus.  
+    
+    When Initiating a new Hangout, perhaps there can be a checkbox for the pair to mark the session as open or closed.
+    For a row representing the user's active hangout,i.e. the user is a participant, show the 'Manage Hangout" link.
